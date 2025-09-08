@@ -98,6 +98,27 @@
             background-color: #c0392b;
         }
 
+        /* Novo botão WhatsApp */
+        .btn-saudades {
+            margin-top: 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 15px;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-saudades:hover {
+            background-color: #1ebd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
         .heart {
             position: absolute;
             pointer-events: none;
@@ -136,6 +157,11 @@
             <button class="btn btn-sim" id="sim">SIM!</button>
             <button class="btn btn-nao" id="nao">Não</button>
         </div>
+
+        <!-- Botão de saudades -->
+        <a href="https://wa.me/5593991640425?text=Oie,%20quer%20sair%20pra%20tomar%20um%20chopp%3F" 
+           target="_blank" 
+           class="btn-saudades">💬 Apertar em caso de saudades</a>
 
         <p class="resposta-negada" id="resposta" style="display: none;">Resposta negada 😢</p>
     </div>
